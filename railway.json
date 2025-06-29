@@ -1,0 +1,17 @@
+{
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@railway/node"
+    }
+  ],
+  "deployments": [
+    {
+      "name": "Production",
+      "environment": {
+        "TCP_PORT": "6789",
+        "BLE_AKTIF": "true"
+      }
+    }
+  ]
+}
