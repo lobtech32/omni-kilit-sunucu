@@ -1,0 +1,16 @@
+{
+  "name": "omni-kilit",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --max-old-space-size=8192 server.js",
+    "preinstall": "npm install --omit=dev --ignore-scripts",
+    "postinstall": "echo 'Post-install tamamlandı'"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}
