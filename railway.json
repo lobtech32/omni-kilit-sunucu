@@ -8,7 +8,11 @@
   "deployments": [
     {
       "src": "package.json",
-      "use": "@railway/node"
+      "use": "@railway/node",
+      "variables": {
+        "PORT": "3000",
+        "NODE_ENV": "production"
+      }
     }
   ]
 }
