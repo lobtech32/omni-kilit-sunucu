@@ -2,7 +2,11 @@
   "builds": [
     {
       "src": "package.json",
-      "use": "@railway/node"
+      "use": "@railway/node",
+      "config": {
+        "maxMemory": "8GB",
+        "gpu": true
+      }
     }
   ],
   "deployments": [
@@ -10,8 +14,10 @@
       "src": "package.json",
       "use": "@railway/node",
       "variables": {
+        "NODE_ENV": "production",
         "PORT": "3000",
-        "NODE_ENV": "production"
+        "TCP_PROXY_HOST": "metro.proxy.rlwy.net",
+        "TCP_PROXY_PORT": "14722"
       }
     }
   ]
