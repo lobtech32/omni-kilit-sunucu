@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "start": "node --max-old-space-size=8192 server.js",
+    "start": "node server.js",
     "preinstall": "npm install --omit=dev",
     "postinstall": "echo 'Post-install script completed'"
   },
