@@ -1,0 +1,11 @@
+{
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@railway/node",
+      "config": {
+        "maxMemory": "8GB"
+      }
+    }
+  ]
+}
