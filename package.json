@@ -4,7 +4,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "preinstall": "npm install express"
+    "preinstall": "npm install express net --omit=dev"
   },
   "dependencies": {
     "express": "^4.18.2",
